@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Majestic RP • Законка</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">Majestic RP</div>
+      <p class="subtitle">Юридический портал</p>
+      <nav>
+        <a href="#overview">Обзор</a>
+        <a href="#constitution">Конституция</a>
+        <a href="#criminal">УК</a>
+        <a href="#administrative">АК</a>
+        <a href="#assistant">AI-ассистент</a>
+        <a href="#telegram">Telegram-бот</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="hero" id="overview">
+        <h1>Законодательная база Majestic RP</h1>
+        <p>
+          Основа в стиле docs-портала (по структуре как в примере portland-fib docs).
+          Здесь можно размещать кодексы, конституции и давать разъяснения через AI.
+        </p>
+      </header>
+
+      <section id="constitution">
+        <h2>Конституция</h2>
+        <article class="card">
+          <h3>Глава 1. Основы штата</h3>
+          <p>
+            Добавьте сюда ваш полный текст конституции. Формат можно сохранить как
+            отдельные статьи и пункты для удобной навигации.
+          </p>
+          <ul>
+            <li>Статья 1. Верховенство закона</li>
+            <li>Статья 2. Права и свободы граждан</li>
+            <li>Статья 3. Разделение ветвей власти</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="criminal">
+        <h2>Уголовный кодекс (УК)</h2>
+        <article class="card">
+          <h3>Пример разметки статьи</h3>
+          <p><strong>Статья 17.1 УК.</strong> Нападение на гос. сотрудника.</p>
+          <p>
+            Описание: умышленное применение насилия, угроз или попытка причинения
+            вреда при исполнении служебных обязанностей.
+          </p>
+          <p>
+            Санкция (пример): арест до 50 месяцев и до 5 звезд розыска (в зависимости
+            от обстоятельств и тяжести).
+          </p>
+        </article>
+      </section>
+
+      <section id="administrative">
+        <h2>Административный кодекс (АК)</h2>
+        <article class="card">
+          <h3>Шаблон для заполнения</h3>
+          <p>
+            Добавьте ваши статьи АК в таком же формате: номер статьи → состав нарушения →
+            диапазон наказания.
+          </p>
+        </article>
+      </section>
+
+      <section id="assistant">
+        <h2>AI-ассистент (Gemini)</h2>
+        <div class="card">
+          <p>
+            Задайте вопрос по законке (например: «Какую статью нарушил человек,
+            стрелявший по гос. сотруднику?»).
+          </p>
+          <textarea id="question" rows="4" placeholder="Введите вопрос..."></textarea>
+          <button id="askBtn">Спросить AI</button>
+          <pre id="answer">Ответ появится здесь...</pre>
+        </div>
+      </section>
+
+      <section id="telegram">
+        <h2>Telegram-бот на aiogram</h2>
+        <article class="card">
+          <p>
+            В проект добавлен бот, который принимает вопросы и отправляет их в Gemini.
+            Файл: <code>bot/bot.py</code>
+          </p>
+          <p>
+            Пример: «Преступник нарушил статью 17.1 УК, срок ареста 50 месяцев/5 звезд
+            розыска».
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
