@@ -5,6 +5,7 @@ Docs-style сайт для законки Majestic RP + AI-ассистент Ge
 ## 1) Установка
 
 ```bash
+npm install
 cp .env.example .env
 ```
 
@@ -32,6 +33,20 @@ python run_all.py --mode bot   # только бот
 
 ```bash
 python web_server.py
+## 2) Запуск сайта
+
+```bash
+npm start
+```
+
+Откройте `http://localhost:3000`.
+
+## 3) Запуск Telegram-бота
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r bot/requirements.txt
 python bot/bot.py
 ```
 
